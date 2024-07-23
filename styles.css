@@ -1,0 +1,118 @@
+body {
+    background-color: #f7f7f7;
+    background-image: url("/pics/y2k-heart-background-mcdyw9ylvexzcn7l.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.page {
+    display: none;
+}
+
+.page-1 {
+    display: block;
+}
+
+.birthday-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #d63384;
+    margin: 20px 0;
+}
+
+button {
+    background-color: #d63384;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c0276d;
+}
+
+.page-2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    padding: 0 20px;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Snowflake styles */
+.snowflake {
+    position: absolute;
+    top: -20%;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    opacity: 0.7;
+    z-index: 2; /* Ensure snowflakes are in front of the content */
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+.snowflake:nth-child(odd) {
+    animation-duration: 10s;
+}
+
+.snowflake:nth-child(even) {
+    animation-duration: 15s;
+}

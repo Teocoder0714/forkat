@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Katkat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="page page-1">
+            <img src="/pics/449345807_461881073411040_3940850212208215962_n.jpg" alt="Happy Birthday" class="birthday-image">
+            <h1>❤️ Happy Birthday Katkat! ❤️</h1>
+            <button onclick="nextPage()">Open Gift</button>
+        </div>
+        <div class="page page-2">
+            <img src="/pics/6832_FlowerForYou2.gif" alt="Happy Birthday">
+            <p>Happy Birthday Katkat! It's your special day and you're now 20! You mean a lot to me, and I want you to know how much 
+                I appreciate and care for  you. You're the sweetest woman I've met. Take care of yourself and always remember that 
+                I’m here for you. May this year bring you endless happiness and always be stong. ily ❤️ </p>
+            <!-- Snowflakes -->
+            <div class="snowflake" style="left: 10%; animation-delay: 0s; background-image: url('/pics/giphy.gif');"></div>
+            <div class="snowflake" style="left: 20%; animation-delay: 2s; background-image: url('/pics/giphy.gif');"></div>
+            <div class="snowflake" style="left: 30%; animation-delay: 4s; background-image: url('/pics/giphy.gif');"></div>
+            <div class="snowflake" style="left: 40%; animation-delay: 6s; background-image: url('/pics/giphy.gif');"></div>
+            <div class="snowflake" style="left: 50%; animation-delay: 8s; background-image: url('/pics/giphy.gif');"></div>
+            <div class="snowflake" style="left: 60%; animation-delay: 10s; background-image: url('/pics/giphy.gif');"></div>
+            <div class="snowflake" style="left: 70%; animation-delay: 12s; background-image: url('/pics//giphy.gif');"></div>
+            <div class="snowflake" style="left: 80%; animation-delay: 14s; background-image: url('/pics/giphy.gif');"></div>
+            <div class="snowflake" style="left: 90%; animation-delay: 16s; background-image: url('/pics/giphy.gif');"></div>
+        </div>
+    </div>
+    <!-- Audio element -->
+    <audio id="birthdayAudio" src="/audio/THANK YOU 4 LOVIN' ME (Lyric Video).mp3"></audio>
+    <script>
+        function nextPage() {
+            document.querySelector('.page-1').style.display = 'none';
+            document.querySelector('.page-2').style.display = 'block';
+            document.getElementById('birthdayAudio').play();
+        }
+    </script>
+</body>
+</html>
